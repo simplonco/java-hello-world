@@ -1,16 +1,9 @@
-NOTE: You can also view the HTML version of this file here:
-https://github.com/exercism/xjava/blob/master/exercises/hello-world/TUTORIAL.md
-
 * [Solving "Hello, World!"](#solving-hello-world)
  * [Reading Gradle output](#reading-gradle-output)
  * [Fixing the first failing test](#fixing-the-first-failing-test)
  * [Enabling and fixing the second test](#enabling-and-fixing-the-second-test)
  * [Enabling the last test](#enabling-the-last-test)
  * [Refactoring](#refactoring)
-* [Submitting your first iteration](#submitting-your-first-iteration)
-* [Next Steps](#next-steps)
- * [Review (and comment on) others' submissions to this exercise](#review-and-comment-on-others-submissions-to-this-exercise)
- * [Extend an exercise](#extend-an-exercise)
 
 ----
 
@@ -24,12 +17,9 @@ Each exercise comes with a set of tests.  The first pass through the
 exercise is about getting all of the tests to pass, one at a time.
 
 If you have not installed the Java Development Kit and Gradle, you must do
-so now.  For help with this, see: http://exercism.io/languages/java/installing
+so now.
 
 ----
-
-This guide picks-up where [Running the Tests (in Java)](http://exercism.io/languages/java/tests)
-left off.  If you haven't reviewed those instructions, do so now.
 
 The following instructions work equally well on Windows, Mac OS X and Linux.
 
@@ -93,7 +83,7 @@ FAILURE: Build failed with an exception.
 
 * What went wrong:
 Execution failed for task ':test'.
-> There were failing tests. See the report at: file:///Users/jtigger/projects/exercism/xjava/build/exercism/java/hello-world/build/reports/tests/index.html
+> There were failing tests. See the report at: file:///Users/simplonco/projects/java-challenges/hello-world/build/reports/tests/index.html
 
 * Try:
 Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
@@ -415,8 +405,7 @@ no additional code on our part.
 
 Now that you've got all the tests passing, you might consider whether
 the code is in the most readable/maintainable/efficient shape.  What makes
-for "good" design of software is a big topic.  The pursuit of it underlies
-much of what makes up the more valuable conversations on Exercism.
+for "good" design of software is a big topic.
 
 For now, let's just take a quick review of our solution and see if there's
 any part of it we'd like to refactor.  Refactoring is changing the way
@@ -491,86 +480,3 @@ confidence that the program still works.  These tests are a far cry from a
 (very quickly) giving us evidence that it is.  Without them, we manually
 run the program with different inputs and/or inspecting the code
 line-by-line -- time-consuming and error prone.
-
-
-
-# Submitting your first iteration
-
-With a working solution that we've reviewed, we're ready to submit it to
-exercism.io.
-
-```
-$ exercism submit src/main/java/HelloWorld.java
-```
-
-
-
-# Next Steps
-
-From here, there are a number of paths you can take.
-
-
-## Move on to the next exercise
-
-There are many more exercises you can practice with.  Grab the next one!
-
-```
-$ exercism fetch java
-```
-
-
-## Review (and comment on) others' submissions to this exercise
-
-The heart of Exercism are the conversations about coding
-practices.  It's definitely fun to practice, but engaging with others
-both in their attempts and your own is how you get feedback.  That feedback
-can help point out what you're doing well and where you might need to
-improve.
-
-Some submissions will be nearly identical to yours; others will be
-completely different.  Seeing both kinds can be instructive and interesting.
-
-Note that you can only view submissions of others for exercises you have
-completed yourself.  This enriches the experience of reading others' code
-because you'll have your own experience of trying to solve the problem.
-
-Here's an up-to-date list of submissions on the Java track:
-
-http://exercism.io/tracks/java/exercises
-
-
-
-## Submit another iteration
-
-You are also encouraged to consider additional "requirements" on a given
-exercise.
-
-For example, you could add a test or two that requires that the greeting
-use the capitalized form on the person's name, regardless of the case they
-used.
-
-In that situation, you'd write a test to set-up that new expectation and
-then implement that in the code (the same process we just went through
-together, above).
-
-
-
-## Contribute to Exercism
-
-The entire of Exercism is Open Source and is the labor of love for over
-100 maintainers and many more contributors.
-
-A starting point to jumping in can be found here:
-
-https://github.com/exercism/x-common/blob/master/CONTRIBUTING.md
-
-
-----
-
-Regardless of what you decide to do next, we sincerely hope you learn
-and enjoy being part of this community.  If at any time you need assistance
-do not hesitate to ask for help:
-
-http://exercism.io/languages/java/help
-
-Cheers!
